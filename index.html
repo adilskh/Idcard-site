@@ -2,138 +2,153 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PVCXpress - Printing Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PVCXpress - All Printing Works</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
     body {
-      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
       color: #333;
-      line-height: 1.6;
     }
 
     header {
       background: linear-gradient(to right, #000000, #434343);
       color: white;
-      padding: 20px 0;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      padding: 30px 20px;
     }
 
     header img {
-      width: 150px;
-      margin-bottom: 10px;
+      max-width: 120px;
+      display: block;
+      margin: 0 auto 10px;
     }
 
-    header h1 {
+    h1 {
+      margin: 10px 0;
       font-size: 2.5em;
-      margin: 10px 0 5px;
     }
 
-    header p {
+    p.tagline {
       font-size: 1.1em;
       color: #ccc;
     }
 
-    nav {
-      margin-top: 10px;
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
     }
 
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
 
-    .container {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .hero {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-
-    .hero img {
-      width: 280px;
-      border-radius: 8px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    }
-
-    .hero h2 {
-      font-size: 2.2em;
-      margin: 20px 0 10px;
-    }
-
-    .hero p {
-      font-size: 1.1em;
-      color: #555;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    .product-card {
+    .service-box {
+      flex: 1 1 260px;
       background: white;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: 0.3s ease;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .product-card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
       border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
     }
 
-    .product-card h3 {
-      margin-top: 10px;
+    .service-box img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .contact {
+      background: #fff;
+      border-top: 4px solid #4CAF50;
+      padding: 20px;
+      border-radius: 6px;
+    }
+
+    .contact a {
+      display: block;
+      margin: 8px 0;
+      color: #4CAF50;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .social a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
       font-size: 1.2em;
     }
 
-    .footer {
-      background: #222;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    .footer a {
-      color: #00e676;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    .footer p {
-      margin-top: 10px;
-      font-size: 0.9em;
-      color: #bbb;
+    @media (max-width: 600px) {
+      .service-box {
+        flex: 1 1 100%;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <header>
-    <img src="https://chat.openai.com/c/file/000000008f9c61f592b858bd8a517d9c" alt="PVCXpress Logo" />
+    <!-- Replace this link with your actual uploaded logo URL -->
+    <img src="https://i.postimg.cc/d3HcgcK7/pvcxpress-logo.png" alt="PVCXpress Logo" />
     <h1>PVCXpress</h1>
-    <p>All Printing Works | T-shirt Printing | PVC ID Cards |
+    <p class="tagline">All Printing Works | T-shirt Printing | PVC ID Cards</p>
+  </header>
+
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <img src="https://i.postimg.cc/4dTysfWw/tshirt-print.jpg" alt="T-shirt Printing">
+        <h3>T-shirt Printing</h3>
+        <p>High quality t-shirt printing for bulk and individual orders.</p>
+      </div>
+      <div class="service-box">
+        <img src="https://i.postimg.cc/q7PRtdMG/id-card-print.jpg" alt="PVC ID Cards">
+        <h3>PVC ID Cards</h3>
+        <p>Design and print PVC ID cards for schools, businesses and events.</p>
+      </div>
+      <div class="service-box">
+        <img src="https://i.postimg.cc/Nj6djb64/print-service.jpg" alt="All Printing Works">
+        <h3>All Printing Works</h3>
+        <p>We handle all types of custom printing services at affordable prices.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: <a href="tel:+919676778377">+91 96767 78377</a></p>
+    <p>Email: <a href="mailto:adilskh456@gmail.com">adilskh456@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/919676778377" target="_blank">Chat on WhatsApp</a></p>
+    <p>Website: <a href="https://www.pvcxpress.com" target="_blank">www.pvcxpress.com</a></p>
+    <p>Location: Beside Bus Stand, Kishtapur, Pargi, Telangana 501501</p>
+  </section>
+
+  <footer>
+    <p>Follow us on</p>
+    <div class="social">
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+      <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+    </div>
+    <p>&copy; 2025 PVCXpress. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
