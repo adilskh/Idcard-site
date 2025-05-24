@@ -1,104 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classic Online Services</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        header {
-            text-align: center;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-        }
-        section {
-            margin: 20px 0;
-        }
-        h2 {
-            color: #4CAF50;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        address {
-            margin-top: 10px;
-            font-style: normal;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PVCXpress - Printing Solutions</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #000000, #434343);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header img {
+      width: 150px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 10px 0 5px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .hero img {
+      width: 280px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+
+    .hero h2 {
+      font-size: 2.2em;
+      margin: 20px 0 10px;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    .footer {
+      background: #222;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .footer a {
+      color: #00e676;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer p {
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #bbb;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Classic Online Services</h1>
-    </header>
 
-    <section>
-        <h2>Our Services</h2>
-        <p>Welcome to Classic Online Services, your one-stop solution for various online applications and Internet Services.</p>
-
-        <div>
-            <h3>Meeseva Services</h3>
-            <p>We provide a range of Meeseva services for your convenience.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Mee_Seva_Logo.jpg" alt="Meeseva Services">
-        </div>
-
-        <div>
-            <h3>Aadhar Enrollment Centre</h3>
-            <p>Enroll for Aadhar with us. Your identity is our priority.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Aadhaar_Logo.svg/1200px-Aadhaar_Logo.svg.png"alt="Aadhar Enrollment Centre"width="300">
-        </div>
-
-        <div>
-            <h3>Online Services</h3>
-            <ol>	
-		<li>All type of online Applications</li>
-		<li>Pan Card</li>
-		<li>Mobile & DTH Recharge</li>
-		<li>Ticket Booking</li>
-		<li>Cash Withdrawal</li>
-		<li>Dharani Services</li>
-		<li>etc</li>	
-					</ol>
-            <img src="https://static.vecteezy.com/system/resources/previews/028/683/964/original/internet-http-address-icon-isolated-globe-sign-network-www-symbol-internet-illustration-vector.jpg" alt="Online Services"width="300">
-        </div>
-    </section>
-
-    <section>
-        <h2>Registration</h2>
-        <p>Sign up for our services by filling out the registration form below:</p>
-
-        <form action="process_registration.php" method="post">
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" required><br><hr>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><hr>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><hr>
-
-            <label for="confirm_password">Confirm Password:</label>
-            <input type="password" id="confirm_password" name="confirm_password" required><br><hr>
-
-            <input type="submit" value="Register"></hr>
-        </form>
-    </section>
-
-    <section>
-        <h2>Our Location</h2>
-        <p>We are located at:</p>
-        <address>
-            Beside Bus stand Kishtapur,<br> Pargi,<br> Telangana,<br> India - 501501.
-        </address>
-	<h2>Contact us At</h2>
-	<p>Contact Us</p>
-	<a href="tel:9676778377">(+91)9676778377</a><br><hr>
-	<p>Contact through Mail</p>
-	<a href="mailto:adilskh456">E- Mail Us</a><hr>
-    </section>
-</body>
-</html>
+  <header>
+    <img src="https://chat.openai.com/c/file/000000008f9c61f592b858bd8a517d9c" alt="PVCXpress Logo" />
+    <h1>PVCXpress</h1>
+    <p>All Printing Works | T-shirt Printing | PVC ID Cards |
